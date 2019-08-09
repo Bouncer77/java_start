@@ -4,20 +4,18 @@ public class Main {
 
     public static void main(String[] args) {
 
-        System.out.println("Hello World!");
-
+        System.out.println("Start Programm!");
         int array[] = {30, 20, 40, 15, 4};
 
-        /*System.out.println(Arrays.toString(array));
+        System.out.println("Bubble_sort and revers int array");
+        System.out.println(Arrays.toString(array));
         bubble_sort(array);
         System.out.println(Arrays.toString(array));
         revers_array(array);
-        System.out.println(Arrays.toString(array));*/
-
         System.out.println(Arrays.toString(array));
-        swap(array, 0, 4);
-        System.out.println(Arrays.toString(array));
+        System.out.println();
 
+        System.out.println("Reverse String (String -> char array : reverse -> new String");
         String str1 = "Hello World!";
         System.out.println(str1);
         String str2 = revers_array(str1.toCharArray());
@@ -50,9 +48,17 @@ public class Main {
 
     private static void revers_array(int[] array) {
 
-        for (int i = 0; i < array.length / 2; ++i) {
-            swap(array, i, array.length - 1 - i);
+        // Ver 2.0 Есть гипотеза, что декремент цикла до 0 работает быстрее,
+        // чем инкремент цикла до определенного не равного значения.
+        // Так как есть Assembler операции сравнения с нулем
+        int sign_even_number = (array.length % 2) == 0? 0 : 1;
+        for (int i = array.length / 2 - 1, j = array.length / 2 + sign_even_number; i >= 0; --i, ++j) {
+            swap(array, i, j);
         }
+        // Ver 1.0
+        /*for (int i = 0; i < array.length / 2; ++i) {
+            swap(array, i, array.length - 1 - i);
+        }*/
     }
 
     private static void bubble_sort(int[] array) {
