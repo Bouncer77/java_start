@@ -1,0 +1,38 @@
+Java Start
+Подготовка к программированию на Java
+1. Sublime Text 3 (ST3)
+	1. Скачать ST3 
+    https://sublimetext3.ru/
+
+    2. Установить руссификатор 
+	https://sysadmin.ru/articles/rusificiruem-sublime-text-3
+
+    3. Отключить автоматическое обновление
+    https://bulkin.me/notes/3102
+
+    4. Настройка синтаксиса Java
+    Вид -> Синтаксис -> Java -> Java
+
+2. Oracle Java JDK
+    Загрузка и настройка JDK
+    https://tproger.ru/articles/start-writing-in-java/
+    C:\Programs Files\Java\jdk-12.0.1\
+    для проверки вызвать cmd (Win+R) набрать javac
+
+3. Git
+    1. Загрузка Git
+    https://devpractice.ru/git-for-beginners-part-2-install-git/
+    C:\Program Files\Git
+
+    2. Настройка
+    git config --global user.email "you@example.com"
+    git config --global user.name "Your Name"
+
+4. Bitbucket
+    1. Создание репозитория в Bitbucket
+    https://bitbucket.org/product/
+
+    2. Клонирование репозитория через git по http
+
+5. Первая программа
+    https://javarush.ru/groups/posts/1918-s-chego-nachatjh-izuchenie-java
