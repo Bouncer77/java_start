@@ -31,7 +31,7 @@ public class Main {
             for (int j = 0; j < textLines.length; ++j) {
                 lenLine = textLines[j].length();
                 if (textLines[j].startsWith(roles[i] + ":")) {
-                    res.append((j+1) + ).append(") ");
+                    res.append((j+1)).append(") ");
                     res.append(textLines[j].substring(roles[i].length() + 2));
                     //res.append(textLines[j].toCharArray(), lenRole + 2, lenLine - lenRole - 2);
                     res.append('\n');
