@@ -1,0 +1,9 @@
+Создание и уничтожение объектов
+
+Статический фабричный метод — это статический метод, который возвращает экземпляр
+класса
+public static Boolean valueOf(boolean b)
+{
+	return b ? Boolean.TRUE : Boolean.FALSE;	
+}
+
