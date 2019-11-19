@@ -1,0 +1,18 @@
+SoftLine Test 1 - SQL
+А) Постройте запрос, который выводит только те записи Table1, которые есть в Table2, исключая повторы (в решении нельзя пользоваться except, minus и intersect).
+
+SELECT t1.ID, t1.Name
+FROM Table1 AS t1, Table2 AS t2
+WHERE t1.ID = t2.ID AND t1.NAME = t2.NAME;
+
+Б) Постройте запрос, который выводит из Table1 только те записи, которых нет в таблице Table2 (в решении нельзя пользоваться except, minus и intersect).
+
+SELECT t1.ID, t1.Name
+FROM Table1 AS t1, Table2 AS t2
+WHERE t1.ID != t2.ID AND t1.NAME != t2.NAME;
+
+В) Постройте запрос, который выводит все записи из Table1 и Table2 в одном списке, включая повторы.
+
+SELECT * 
+FROM Table1 AS t1
+JOIN Table2 AS t2
