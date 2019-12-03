@@ -114,7 +114,12 @@ public class Main {
                 // 3) Придумать гениальное решение
                 // В данном случае заносится лишь последнее значение из входного списка
                 if (t.getType() == Type.DEPOSIT)
-                    map.put(t.getCurrency(), t.getAmount());
+                    if (map.containsKey(t.getType())) {
+
+                    } else {
+                        map.put(t.getCurrency(), t.getAmount());
+                    }
+
             }
             System.out.println(map);
             return null;
